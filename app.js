@@ -7,7 +7,6 @@ const app = express();
 import mainRouter from './routes/routes.js'
 
 app.use(express.json());
-app.use(cookieParser());
 app.use(cors({
   origin: 'https://myproject-client-chi.vercel.app',
   credentials: true
