@@ -106,12 +106,11 @@ const dashboard = async (req, res) => {
     try {
         const { username, email } = req.user; 
         res.status(200).json({
-            username,
             status: "success",
             message: "Get Profile Successfully",
             data: {
-                username: req.user.username,
-                email: req.user.email
+                username,
+                email
             }
         });
     } catch (error) {
